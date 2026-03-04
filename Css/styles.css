@@ -1,0 +1,155 @@
+/* RESET GENERAL */
+/* Elimina márgenes y paddings por defecto del navegador */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GENERALES DEL BODY */
+body{
+
+    /* Fuente principal del sitio */
+    font-family: Arial, sans-serif;
+
+    /* Color de fondo general */
+    background-color: #aeb7bf;
+}
+
+main{
+    /* Color de fondo */
+    background-color: #aeb7bf;
+
+    /* Centra el texto horizontalmente */
+    text-align: center;
+
+    /* Espacio interno */
+    padding: 60px 20px;
+
+     /* Ocupa al menos el 80% de la pantalla */
+    min-height: 70vh;
+
+    /* Bordes redondeados */
+    border-radius: 6px;
+}
+
+.header{
+    /* Ordeno los elementos */
+    display: flex;
+
+    /* Distribuye elementos horizontalmente */
+    justify-content: space-between;
+
+    /* centra los elementos */
+    align-items: center;
+
+    /* Espacio interno */
+    padding: 15px 25px;
+
+    background-color: #b4bcc3;
+    border-radius: 6px;
+}
+
+/*Hace que la imagen sea pequeña y circular */
+.header img{
+    width: 40px;
+    border-radius: 50px;
+}
+
+.menu{
+
+     /* Organiza los ítems en fila */
+    display: flex;
+
+    /* Espacio entre elementos */
+    gap: 15px;
+
+    /* Quita los puntos de la lista */
+    list-style: none;
+}
+
+
+/* ENLACES DEL MENÚ */
+.menu a{
+
+    /* Quita subrayado */
+    text-decoration: none;
+
+    /* Fondo del botón */
+    background-color: #2f3e46;
+    
+    /* Color del texto */
+    color: white;
+
+    /* Espaciado interno */
+    padding: 8px 15px;
+    
+    /* Bordes redondeados */
+    border-radius: 5px;
+}
+
+/* Titulo principal */
+h1{
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #24323d;
+}
+
+h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #1e2a33;
+}
+
+.experiencia .card{
+    background-color: #d9dee3;
+    border: none;
+    border-radius: 8px;
+}
+
+.proyectos .card{
+    background-color: #d9dee3;
+    border-radius: 12px;
+    text-align: center;
+
+}
+
+/* Media Query para adaptar el diseño en pantallas menores a 768px */
+@media (max-width: 768px){
+
+    /* El header pasa de horizontal a vertical */
+    .header{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+     /* El menú se acomoda en columna */
+    .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contenedor-principal{
+
+    /* Ocupa el 90% del ancho de la pantalla */
+    width: 90%; 
+
+    /* maximo 1100px */
+    max-width: 90%;
+
+    /* centrado horizontalmente */
+    margin: 40px auto;
+
+    background-color: #9ea7af;
+
+    /* Bordes redondeados */
+    border-radius: 8px;
+
+    /* Espacio interno */
+    padding: 20px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
