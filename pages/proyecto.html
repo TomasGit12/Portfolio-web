@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- Enlace para el archivo Css -->
-    <link rel="stylesheet" href="../Css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
     <title>Proyectos-personales</title>
 </head>
@@ -18,16 +18,19 @@
 
         <!-- Encabezado del sitio -->
         <header class="header">
-
-            <!-- Barra de navegacion -->
-            <nav>
-                <ul>
-                    <!-- enlaces de la pagina -->
-                    <li><a href="../index.html">inicio</a></li>
-                    <li><a href="experiencia.html">experiencia</a></li>
-                    <li><a href="proyecto.html">proyecto</a></li>
-                </ul>
-            </nav>
+            <div class="barra">
+                <p class="nombre">Tomas Mercado</p>
+                    <!-- Barra de navegacion -->
+                    <nav>
+                        <ul class="menu">
+                            <!-- enlaces de la pagina -->
+                            <li><a href="../index.html" class="btn-custom">inicio</a></li>
+                            <li><a href="experiencia.html" class="btn-custom">experiencia</a></li>
+                            <li><a href="proyecto.html" class="btn-custom">proyecto</a></li>
+                        </ul>
+                    </nav>
+    
+            </div>
         </header>
 
         <!-- Contenido principal -->
@@ -48,30 +51,33 @@
                         <!-- Componente Card -->
                         <!-- h-100 hace que todas las cards tengan misma altura -->
                         <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Página de productos</h5>
-                                <p class="card-text">Sitio web ecommerce desarrollado con HTML y CSS.</p>
-                            </div>
+                            <img src="../img/foto4.jpg" class="card-img-top" alt="Proyecto ecommerce">
+                                <div class="card-body">
+                                    <h5 class="card-title">Página de productos</h5>
+                                    <p class="card-text">Sitio web ecommerce desarrollado con HTML y CSS.</p>
+                                </div>
                         </div>
                     </div>
                     
                     <!-- Segunda columna -->
                     <div class="col-md-4">
                         <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">App de gimnasio</h5>
-                                <p class="card-text">Aplicación para seguimiento de rutinas y progreso.</p>
-                            </div>
+                            <img src="../img/foto3.jpg" class="card-img-top" alt="Proyecto ecommerce">
+                                <div class="card-body">
+                                    <h5 class="card-title">App de gimnasio</h5>
+                                    <p class="card-text">Aplicación para seguimiento de rutinas y progreso.</p>
+                                </div>
                         </div>
                     </div>
                     
                     <!-- Tercera columna -->
                     <div class="col-md-4">
                         <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">App de tareas</h5>
-                                <p class="card-text">Aplicación para organizar tareas diarias.</p>
-                            </div>
+                            <img src="../img/foto2.jpg" class="card-img-top" alt="Proyecto ecommerce">
+                                <div class="card-body">
+                                    <h5 class="card-title">App de tareas</h5>
+                                    <p class="card-text">Aplicación para organizar tareas diarias.</p>
+                                </div>
                         </div>
                     </div>
 

@@ -1,0 +1,27 @@
+@use "variables" as *;
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin bordes($radio){
+    border-radius: $radio;
+
+}
+
+@mixin card{
+    background-color: $color-card;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+@mixin boton{
+    background-color: $color-boton;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
